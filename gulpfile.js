@@ -54,7 +54,7 @@ gulp.task('nunjucks', function() {
 gulp.task('images', function(){
     return gulp.src('src/assets/media/images/**/*.+(png|jpg|gif|svg)')
         .pipe(imagemin())
-        .pipe(gulp.dest('dist/assets/media/images'))
+        .pipe(gulp.dest('dist/assets/media/images/'))
 });
 
 
