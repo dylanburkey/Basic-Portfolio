@@ -33,7 +33,7 @@ gulp.task('bs-reload', function () {
 gulp.task('minify', function() {
     return gulp.src('./*.html')
         .pipe(htmlmin({collapseWhitespace: true}))
-        .pipe(gulp.dest('dist/sandbox/'));
+        .pipe(gulp.dest('dist/'));
 });
 
 gulp.task('nunjucks', function() {
@@ -52,26 +52,26 @@ gulp.task('nunjucks', function() {
 
 
 gulp.task('images', function(){
-    return gulp.src('src/images/**/*.+(png|jpg|gif|svg)')
+    return gulp.src('src/assets/media/images/**/*.+(png|jpg|gif|svg)')
         .pipe(imagemin())
-        .pipe(gulp.dest('dist/images'))
+        .pipe(gulp.dest('dist/assets/media/images'))
 });
 
 
 gulp.task('sass', function() {
-  gulp.src(['src/styles/**/*.scss'])
+  gulp.src(['src/assets/styles/**/*.scss'])
       .pipe(sass({
           outputStyle: 'compressed'
       }).on('error', sass.logError))
         .pipe(autoprefixer('last 3 versions'))
-        .pipe(gulp.dest('dist/styles/'))
+        .pipe(gulp.dest('dist/assets/styles/'))
         .pipe(rename({suffix: '.min'}))
         .pipe(minifycss())
-        .pipe(gulp.dest('dist/styles/'))
+        .pipe(gulp.dest('dist/assets/styles/'))
          .pipe(browserSync.reload({stream:true}))
 });
 gulp.task('scripts', function(){
-    return gulp.src('src/scripts/**/*.js')
+    return gulp.src('src/assets/scripts/**/*.js')
         .pipe(plumber({
             errorHandler: function (error) {
                 console.log(error.message);
@@ -81,17 +81,17 @@ gulp.task('scripts', function(){
         .pipe(jshint.reporter('default'))
         .pipe(concat('main.js'))
         .pipe(babel())
-        .pipe(gulp.dest('dist/scripts/'))
+        .pipe(gulp.dest('dist/assets/scripts/'))
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
-        .pipe(gulp.dest('dist/scripts/'))
+        .pipe(gulp.dest('dist/assets/scripts/'))
         .pipe(browserSync.reload({stream:true}))
 });
 
 
 gulp.task('watch', ['browserSync', 'sass'], function (){
-    gulp.watch('src/styles/**/*.scss', ['sass']);
-    gulp.watch("src/scripts/**/*.js", ['scripts']);
+    gulp.watch('src/assets/styles/**/*.scss', ['sass']);
+    gulp.watch("src/assets/scripts/**/*.js", ['scripts']);
     gulp.watch("*.html", ['bs-reload']);
     // Other watchers
 });
