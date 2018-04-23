@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 plumber = require('gulp-plumber'),
     rename = require('gulp-rename');
-var imagemin = require('gulp-imagemin');
+const imagemin = require('gulp-imagemin');
 var sass = require('gulp-sass');
 var minifycss = require('gulp-minify-css');
 var htmlmin = require('gulp-htmlmin');

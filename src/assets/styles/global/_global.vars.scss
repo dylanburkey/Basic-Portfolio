@@ -7,3 +7,31 @@
  * @section Config > Paths
  */
 $config--image-folder: "../assets/media/images";
+
+/**
+ * Use Meyer Reset?
+ *
+ * @nuclide Framework Options
+ * @section Config > Framework > Options
+ */
+
+$use-meyer-rest: false;
+
+/**
+ * Use Normalize?
+ *
+ * @nuclide Framework Options
+ * @section Config > Framework > Options
+ */
+
+$use-normalize: false;
+
+/**
+ * Use Custom Rest?
+ *
+ * @nuclide Framework Options
+ * @section Config > Framework > Options
+ */
+
+$use-dbreset: true;
+

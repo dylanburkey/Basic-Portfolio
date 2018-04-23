@@ -57,6 +57,7 @@
     "node-sass": "^4.8.3",
     "plur": "^2.0.0",
     "pretty-bytes": "^4.0.2",
+    "sass-mq": "^4.0.2",
     "through2-concurrent": "^1.1.0"
   },
   "xo": {

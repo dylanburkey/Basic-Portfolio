@@ -1,10 +1,30 @@
 @charset "UTF-8";
-
+@import
+'global/_global.vars',
+'global/_global.color-pallate';
+body {
+  font-family: 'Roboto', sans-serif;
+}
 .test {
   p {
     color: red;
   }
   a {
     color: blue;
+  }
+}
+
+.header-container {
+  padding: 2%;
+  max-width: 30%;
+  text-align: center;
+  background: $c-theme-1;
+  h1 {
+    font-weight: 800;
+
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
   }
 }

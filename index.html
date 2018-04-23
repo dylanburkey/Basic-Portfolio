@@ -10,10 +10,40 @@
 </head>
 <body>
 
-<div class="test">
-    <p>this is stuff</p>
-    <a href="#">Example</a>
-</div>
+    <!-- Start .app-container -->
+    <div class="app-container">
 
+        <!-- start header -->
+        <header role="banner">
+            <div class="header-container">
+                <a href="/"><h1>dylanburkey</h1></a>
+            </div>
+        </header>
+        <!-- /header -->
+
+        <main role="main">
+
+        </main>
+
+        <footer role="contentinfo">
+
+        </footer>
+
+    </div>
+    <!-- /.app-container -->
+    <script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+    <script type="text/javascript">
+        WebFont.load({
+            google: {
+                families: ['Roboto']
+            }
+        });
+    </script>
+    <style type="text/css">
+        .wf-loading h1 { visibility: hidden; }
+        .wf-active h1, .wf-inactive h1 {
+            visibility: visible; font-family: 'Roboto';
+        }
+    </style>
 </body>
 </html>
