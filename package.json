@@ -4,7 +4,8 @@
   "description": "Basic Portfolio using floats",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -51,6 +52,8 @@
   },
   "dependencies": {
     "chalk": "^2.3.0",
+    "express": "^4.16.3",
+    "express-path": "^0.3.8",
     "gulp-util": "^3.0.0",
     "imagemin": "^5.0.0",
     "imagemin-optipng": "^5.2.1",
@@ -58,6 +61,7 @@
     "plur": "^2.0.0",
     "pretty-bytes": "^4.0.2",
     "sass-mq": "^4.0.2",
+    "serve-static": "^1.13.2",
     "through2-concurrent": "^1.1.0"
   },
   "xo": {

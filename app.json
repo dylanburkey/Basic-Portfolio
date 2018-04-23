@@ -2,6 +2,8 @@
   "name": "Basic-Portfolio",
   "description": "Basic Portfolio Homework",
   "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
   },
   "env": {
   },
