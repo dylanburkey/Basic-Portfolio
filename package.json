@@ -2,8 +2,9 @@
   "name": "basic-portfolio",
   "version": "1.0.0",
   "description": "Basic Portfolio using floats",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "styleguide": "nucleus --config config.nucleus.json",
     "start": "node server.js",
     "test": "node test.js"
   },
@@ -58,6 +59,7 @@
     "imagemin": "^5.0.0",
     "imagemin-optipng": "^5.2.1",
     "node-sass": "^4.8.3",
+    "normalize.css": "^8.0.0",
     "plur": "^2.0.0",
     "pretty-bytes": "^4.0.2",
     "sass-mq": "^4.0.2",
