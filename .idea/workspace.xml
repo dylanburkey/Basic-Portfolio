@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="178d64d4-f951-4c31-bb5b-5703738cd764" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/utilities/_utilities.mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/templates/partials/footer.njk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/templates/partials/header.njk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/styles/structures/_structures.base.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/assets/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/assets/styles/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/styles/styles.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/assets/styles/styles.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/global/_global.color-pallate.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/global/_global.color-pallate.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/global/_global.vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/global/_global.vars.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/templates/layout.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/templates/layout.njk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/utilities/_utilities.mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/utilities/_utilities.mixins.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -45,11 +37,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="styles.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/assets/styles/styles.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+            <state relative-caret-position="80">
+              <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_structures.base.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/assets/styles/structures/_structures.base.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -86,15 +87,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_vendor.resets.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/assets/styles/vendor/_vendor.resets.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/index.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -104,16 +96,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_utilities.mixins.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_utilities.mixins.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/assets/styles/utilities/_utilities.mixins.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-439">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="124">
+              <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src/assets/styles/structures</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -131,7 +131,6 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/assets/templates/partials/header.njk" />
         <option value="$PROJECT_DIR$/src/assets/templates/footer.njk" />
-        <option value="$PROJECT_DIR$/src/assets/styles/utilities/_utilities.mixins.scss" />
         <option value="$PROJECT_DIR$/src/assets/styles/global/_global.vars.scss" />
         <option value="$PROJECT_DIR$/src/assets/styles/global/_global.color-pallate.scss" />
         <option value="$PROJECT_DIR$/src/assets/templates/layout.njk" />
@@ -139,6 +138,8 @@
         <option value="$PROJECT_DIR$/dist/index.html" />
         <option value="$PROJECT_DIR$/src/assets/templates/pages/index.njk" />
         <option value="$PROJECT_DIR$/src/assets/styles/styles.scss" />
+        <option value="$PROJECT_DIR$/src/assets/styles/structures/_structures.base.scss" />
+        <option value="$PROJECT_DIR$/src/assets/styles/utilities/_utilities.mixins.scss" />
       </list>
     </option>
   </component>
@@ -275,28 +276,6 @@
               <item name="Basic-Portfolio" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Basic-Portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Basic-Portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Basic-Portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Basic-Portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Basic-Portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Basic-Portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="styles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -306,6 +285,14 @@
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="styles" type="462c0819:PsiDirectoryNode" />
               <item name="global" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Basic-Portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Basic-Portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+              <item name="structures" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Basic-Portfolio" type="b2602c69:ProjectViewProjectNode" />
@@ -362,7 +349,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -470,12 +457,12 @@
       <workItem from="1524429756099" duration="8255000" />
       <workItem from="1524503606481" duration="614000" />
       <workItem from="1524504240603" duration="22743000" />
-      <workItem from="1524602180826" duration="5415000" />
+      <workItem from="1524602180826" duration="6338000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37027000" />
+    <option name="totallyTimeSpent" value="37950000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="829" extended-state="0" />
@@ -486,13 +473,14 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50069445" side_tool="true" weight="0.32786885" />
       <window_info anchor="bottom" id="GitLabIntegration" order="7" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22404371" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22404371" />
       <window_info id="npm" order="2" sideWeight="0.20528455" side_tool="true" weight="0.14722222" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32786885" />
-      <window_info id="Gulp" order="2" sideWeight="0.20774648" side_tool="true" visible="true" weight="0.14722222" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7922535" visible="true" weight="0.14722222" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32786885" />
+      <window_info id="Gulp" order="2" sideWeight="0.20731707" side_tool="true" visible="true" weight="0.14722222" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.79268295" visible="true" weight="0.14722222" />
       <window_info anchor="bottom" id="Statistic" order="7" sideWeight="0.49930555" weight="0.32786885" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -502,7 +490,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -536,13 +523,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/assets/templates/layout.njk">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/templates/partials/footer.njk">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
@@ -841,13 +821,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/styles/utilities/_utilities.mixins.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-439">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/assets/scripts/main.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -865,13 +838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/assets/styles/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/templates/layout.njk">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
@@ -886,10 +852,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/styles/structures/_structures.base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/assets/styles/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/styles/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+        <state relative-caret-position="80">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/styles/utilities/_utilities.mixins.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
         </state>
       </provider>
     </entry>

@@ -32,8 +32,14 @@
  *
  */
 
-@mixin box-sizing($box-sizing: border-box){
+@mixin box-sizing($box-sizing: border-box, $use-inherit: false){
   box-sizing: $box-sizing;
+  @if $use-inherit == false {
+	&::before,
+	&::after {
+	  box-sizing : inherit;
+	}
+  }
 }
 
 
