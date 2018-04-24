@@ -1,7 +1,6 @@
 var gulp = require('gulp');
 plumber = require('gulp-plumber'),
     rename = require('gulp-rename');
-const imagemin = require('gulp-imagemin');
 var sass = require('gulp-sass');
 var minifycss = require('gulp-minify-css');
 var htmlmin = require('gulp-htmlmin');
@@ -13,6 +12,8 @@ var uglify = require('gulp-uglify');
 var nunjucksRender = require('gulp-nunjucks-render');
 var newer = require('gulp-newer');
 var data = require('gulp-data');
+const imagemin = require('gulp-imagemin');
+
 
 
 var browserSync = require('browser-sync').create();

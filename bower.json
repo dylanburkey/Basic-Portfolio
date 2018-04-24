@@ -1,0 +1,26 @@
+{
+  "name": "basic-portfolio",
+  "description": "Basic Portfolio using floats",
+  "main": "index.js",
+  "authors": [
+    "Dylan Burkey"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Basic",
+    "Porfolio",
+    "Homework",
+    "Week",
+    "One",
+    "Floats"
+  ],
+  "homepage": "https://github.com/dylanburkey/Basic-Portfolio",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
