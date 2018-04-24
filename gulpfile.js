@@ -22,7 +22,7 @@ var browserSync = require('browser-sync').create();
 gulp.task('browserSync', function() {
     browserSync.init({
         server: {
-            baseDir: './'
+            baseDir: 'dist/'
         },
     })
 })
@@ -38,15 +38,15 @@ gulp.task('minify', function() {
 });
 
 gulp.task('nunjucks', function() {
-    return gulp.src('src/pages/**/*.+(html|njk|nunjucks)')
+    return gulp.src('src/assets/templates/pages/**/*.+(html|njk|nunjucks)')
     // We do not need the data.json for this demo but you can use it if you wanna
-        .pipe(data(function(){
+       /* .pipe(data(function(){
         return require('./src/data/data.json');
-        }))
+        }))*/
         .pipe(nunjucksRender({
-            path: ['src/templates/']
+            path: ['src/assets/templates/']
         }))
-        .pipe(gulp.dest('./'))
+        .pipe(gulp.dest('dist/'))
 
 });
 

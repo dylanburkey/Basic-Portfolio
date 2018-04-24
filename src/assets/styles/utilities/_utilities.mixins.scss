@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/**
+ * Clearfix
+ * Micro Clearfix for use when using floats
+ *
+ * @mixin
+ * @section Utility Mixins
+ * @example
+ *  @include clearfix;
+ *
+ */
+
+@mixin clearfix(){
+  &::after {
+	content: ' ';
+	display: table;
+	clear: both;
+  }
+}
+
+/**
+ * Box Sizing
+ * Set box-sizing depending on the page layout
+ * @mixin
+ * @param $box-sizing
+ *  Sets box-sizing between border-box and content box
+ * @section Utility Mixins
+ * @example
+ *  @include box-sizing;
+ *  @include box-sizing($box-sizing: content-box)
+ *
+ */
+
+@mixin box-sizing($box-sizing: border-box){
+  box-sizing: $box-sizing;
+}
+
+
+/**
+ * REM Font Size with Pixel Fallback
+ * line height is calculated based on the $font-size input
+ * Pass your font size in px
+ * @mixin
+ * @param $font-size
+ *  Enter desired font-size ie 12px
+ * @param $line-height
+ *  Set to true by default, if you need to set
+ *  a custom line-height set this to false
+ * @section Utility Mixins > Typography Tools
+ * @example
+ *  @include font-size(12px);
+ *
+ */
+@mixin font-size($font-size, $line-height:true){
+  font-size:$font-size;
+  font-size:($font-size / $base-font-size)*1rem;
+  @if $line-height == true{
+	line-height:ceil($font-size / $base-line-height) * ($base-line-height / $font-size);
+  }
+}
+
+/**
+ * Text Size Adjust
+ *
+ * Adjust text size for the body element
+ * @mixin
+ * @param $text-size-adjust
+ *  $text-size-adjust is set to 100% by default.
+ *	This size should only be adjusted if necessary.
+ * @section Utility Mixins > Typography Tools
+ * @example
+ *  @include text-size-adjust;
+ *	@include text-size-adjust(80%);
+ */
+@mixin text-size-adjust($text-size-adjust: 100%){
+  text-size-adjust: $text-size-adjust;
+}
+
+
+
+@mixin width-height($width, $height){
+  width: $width;
+  height: $height;
+}
