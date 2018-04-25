@@ -9,3 +9,13 @@
 * {
   @include box-sizing;
 }
+
+html {
+  font-family: sans-serif;
+  height: 100%;
+}
+
+body {
+  font-family: $base-font-family;
+  line-height: 1.4;
+}

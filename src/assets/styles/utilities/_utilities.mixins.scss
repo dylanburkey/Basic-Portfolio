@@ -89,3 +89,20 @@
   width: $width;
   height: $height;
 }
+
+/**
+ * Body Starter
+ * Set box-sizing depending on the page layout
+ * @mixin
+ * @param $box-sizing
+ *  Sets box-sizing between border-box and content box
+ * @section Utility Mixins
+ * @example
+ *  @include box-sizing;
+ *  @include box-sizing($box-sizing: content-box)
+ *
+ */
+
+
+
+
