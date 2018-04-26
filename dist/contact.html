@@ -50,9 +50,12 @@
 
         
 <main role="main" class="content-container">
+    <header class="header-intro">
+        <h2 class="content-header">contact</h2>
+    </header>
     <!-- include form -->
     <!-- Contact Form -->
-<form name="contact-form" method="post">
+<form class="contact-form" name="contact-form" method="post">
     <div class="input-wrap">
         <label for="name">name</label>
         <input type="text" name="name" placeholder="Your Name" required>
@@ -63,7 +66,7 @@
     </div>
     <div class="input-wrap">
         <label for="message">message</label>
-        <textarea name="message" required rows="80" cols="80">
+        <textarea title="message" name="message" class="contact-message" required>
 
         </textarea>
     </div>

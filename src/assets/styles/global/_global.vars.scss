@@ -45,3 +45,15 @@ $base-font-size: 16px;
 
 $base-line-height: 24px;
 
+%clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+	content: " ";
+	display: table;
+  }
+  &:after {
+	clear: both;
+  }
+}
+

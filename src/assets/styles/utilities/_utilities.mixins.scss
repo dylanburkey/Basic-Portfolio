@@ -85,7 +85,7 @@
 }
 
 /**
- * Body Starter
+ * Grid Mixin
  * Set box-sizing depending on the page layout
  * @mixin
  * @param $box-sizing
@@ -97,6 +97,21 @@
  *
  */
 
+$grid-columns: 12;
+$grid-max-width: 60em;
 
+
+// breakpoints
+$breakpoint-small: "only screen and (min-width: 20em)";
+$breakpoint-medium: "only screen and (min-width: 30em)";
+@mixin create-grid($grid-columns: 12) {
+  @for $i from 1 through $grid-columns {
+
+	.col-#{$i} {
+	  width : 100% / $grid-columns * $i;
+	}
+
+  }
+}
 
 

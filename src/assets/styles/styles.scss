@@ -23,7 +23,7 @@ body {
   white-space: normal;
   font-style: normal;
   color: #222;
-  background: $b-theme-1;
+  background: #eee;
 }
 
 .app-container {
@@ -32,7 +32,7 @@ body {
   margin:  auto;
   @include clearfix;
   font-weight: 400;
-  background: $b-theme-4;
+  background: $d-theme-2;
 }
 
 .app-container, .site-wrap {
@@ -78,7 +78,7 @@ p {
  */
 
 .primary-site-header {
-  background: $b-theme-3;
+  background: $c-theme-1;
   min-height: 75px;
   max-height: 150px;
   margin-bottom: 2em;
@@ -101,9 +101,9 @@ p {
   @include clearfix;
   padding: 1em;
   margin-top: 1em;
-  background: $b-theme-4;
-  border-left: 1px solid $b-theme-5;
-  border-right: 1px solid $b-theme-5;
+  background: $c-theme-1;
+  border-style: ridge;
+  border: ridge 1px $d-theme-3;
 }
 
 /*
@@ -118,7 +118,7 @@ Primary Site Logo
 .site-logo {
   margin-top: 0;
   @include font-size(32px);
-  background: $b-theme-5;
+  background: $d-theme-3;
   font-weight: 600;
 
 
@@ -126,7 +126,7 @@ Primary Site Logo
    a {
      text-decoration: none;
      padding: 20px;
-     color: $b-theme-3;
+     color: $c-base-white;
 
    }
 }
@@ -176,7 +176,7 @@ Primary Site Logo
   padding-bottom: 10px;
   font-weight: 600;
   font-family: $base-header-font-family;
-  border-bottom: thin solid $b-theme-5;
+  border-bottom: thin solid $b-theme-1;
 }
 
 .img-container {
@@ -217,21 +217,69 @@ img {
 .contact-form {
   @include clearfix;
   max-width: 98%;
+  .input-wrap {
+    margin: 0.75em 0;
+  }
+
   label {
-    clear: both;
-    @include font-size(16px);
-    
+    display : block;
+    @include font-size(18px);
+    font-family: $base-font-family;
+    font-weight: 600;
+    text-transform : capitalize;
+    margin-bottom: 5px;
   }
   input {
-    padding: 5px 2px;
+    padding: 10px;
+    font-weight: 600;
+
   }
   input,textarea {
     width: 100%;
+    @include font-size(16px);
   }
   textarea {
-    height: 400px;
+    height: 150px;
+    width: 100%;
+    padding: 0;
+
+
+  }
+  .contact-theme {
+    background: $b-theme-1;
+    padding: 10px 20px;
+    color: $c-base-white;
+    @include font-size(18px);
+    outline: none;
+    border: none;
+    cursor: pointer;
   }
 }
 
+/*
+  Create Micro Grid Styles
+ */
+
+.wrapper,
+.row {
+  @extend %clearfix;
+}
+
+[class*='col-'] {
+  float: left;
+  padding: 1em;
+  width: 100%;
+  min-height: 1px;
+}
+
+@include create-grid;
+
+/* Card Styles */
+
+.card {
+  height: 300px;
+  background: $d-theme-3;
+  color: $c-base-white;
+}
 
 

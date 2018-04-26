@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head>
+    <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
+
+        <link href="assets/styles/styles.min.css" rel="stylesheet">
+        <script>
+            (function() {
+                if (sessionStorage.fonts) {
+                    console.log("Fonts installed.");
+                    document.documentElement.classList.add('wf-active');
+                } else {
+                    console.log("No fonts installed.");
+                }
+            })();
+        </script>
+        <link rel="icon" href="src/images/favicon.jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title> </title>
+
+    
+
+
+
+
+</head>
+<body>
+
+<!-- Start Primary Header -->
+<header role="banner" class="primary-site-header">
+    <!-- Start .site-wrap -->
+    <div class="site-wrap">
+        <h1 class="site-logo"><a href="/">Dylan Burkey</a></h1>
+
+        <nav class="primary-site-nav">
+            <a class="site-link" href="/">about</a>
+            <a class="site-link" href="/portfolio.html">portfolio</a>
+            <a class="site-link" href="/contact.html">contact</a>
+
+        </nav>
+    </div>
+    <!-- /.site-wrap -->
+</header>
+
+    <div class="app-container">
+
+
+        
+<main role="main" class="content-container">
+    <header class="header-intro">
+        <h2 class="content-header">portfolio</h2>
+    </header>
+
+    <!-- Cards -->
+<aside class="card-container">
+    <div class="row">
+        <div class="col-4">
+            <div class="card">
+                <img src="http://placehold.it/200x200" alt="example image">
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <img src="http://placehold.it/200x200" alt="example image">
+            </div>
+        </div>
+        <div class="col-4">
+            <section class="card">
+                <header><h2>example three</h2></header>
+                <img src="http://placehold.it/200x200" alt="example image">
+            </section>
+        </div>
+    </div>
+</aside>
+
+
+
+
+</main>
+
+
+
+
+
+            <!-- Start Primary Footer -->
+    <footer role="contentinfo" class="primary-site-footer">
+        <p class="copyright">Dylan Burkey &copy;</p>
+    </footer>
+    </div>
+    <!-- /.app-container -->
+
+
+
+<!-- Web Font Loader -->
+<script>
+(function(d) {
+var wf = d.createElement('script'), s = d.scripts[0];
+wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
+s.parentNode.insertBefore(wf, s);
+})(document);
+</script>
+<script src="assets/scripts/main.js"></script>
+</body>
+</html>
