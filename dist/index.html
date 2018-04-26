@@ -2,6 +2,8 @@
 <html lang="en-us" dir="ltr">
     <head>
     <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
+
         <link href="assets/styles/styles.min.css" rel="stylesheet">
 
         <link rel="icon" href="src/images/favicon.jpg">
@@ -17,29 +19,52 @@
 
 </head>
 <body>
-    <div class="app-container">
 
-        
 <!-- Start Primary Header -->
 <header role="banner" class="primary-site-header">
-    <div class="site-header__logo">
-        <a class="header-logo__link" href="/">
-            <h1 class="header-logo">dylanburkey</h1>
-        </a>
+    <!-- Start .site-wrap -->
+
+    <div class="site-wrap">
+            <a class="primary-site__link" href="/">
+                <h1 class="primary-site__logo">dylan burkey</h1>
+            </a>
+
+        <nav class="primary-site-nav">
+            <ul>
+                <li class="site-link"><a href="/">about</a></li>
+                <li class="site-link"><a href=""></a></li>
+                <li class="site-link"><a href=""></a></li>
+            </ul>
+        </nav>
     </div>
+    <!-- /.site-wrap -->
 </header>
 
+    <div class="app-container">
+
+
         
-    <main role="main" class="container-row">
-      <section class="content-row">
-          <h1 class="content-header">about me</h1>
-          <div class="content-container">
-              <div class="media-container">
-                <img src="http://placehold.it/300x300" alt="Dylan Burkey">
-              </div>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequatur dolor dolore facilis, impedit magnam neque quae, quas quod sed sequi vero. </p><p>Earum fuga in maxime mollitia qui repudiandae ullam?</p>
-          </div>
-      </section>
+    <main role="main" class="content-container">
+
+        <article>
+            <header class="header-intro">
+                <h2 class="content-header">about me</h2>
+            </header>
+
+            <img class="img-container" src="assets/media/images/dylan-burkey.jpg" alt="Dylan Burkey" title="Dylan Burkey">
+
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam odit modi neque facilis quam labore voluptatem placeat nam tempora nulla voluptates saepe iusto sapiente vel eaque nobis sit, recusandae minima!</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, ipsa voluptas non repellendus voluptatum voluptatibus ea officiis, animi, maxime iste dolore. A, esse impedit rem iusto sit similique molestiae laudantium.</p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam odit modi neque facilis quam labore voluptatem placeat nam tempora nulla voluptates saepe iusto sapiente vel eaque nobis sit, recusandae minima!</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, ipsa voluptas non repellendus voluptatum voluptatibus ea officiis, animi, maxime iste dolore. A, esse impedit rem iusto sit similique molestiae laudantium.</p>
+
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, ipsa voluptas non repellendus voluptatum voluptatibus ea officiis, animi, maxime iste dolore. A, esse impedit rem iusto sit similique molestiae laudantium.</p>
+        </article>
+
+        
     </main>
 
 
@@ -48,13 +73,21 @@
 
             <!-- Start Primary Footer -->
     <footer role="contentinfo" class="primary-site-footer">
-        <p>Heyo</p>
+        <p class="copyright">Dylan Burkey &copy;</p>
     </footer>
     </div>
     <!-- /.app-container -->
 
 
 
-
+<!-- Web Font Loader -->
+<script>
+(function(d) {
+var wf = d.createElement('script'), s = d.scripts[0];
+wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
+s.parentNode.insertBefore(wf, s);
+})(document);
+</script>
+<script src="assets/scripts/main.js"></script>
 </body>
 </html>

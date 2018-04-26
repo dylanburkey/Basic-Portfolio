@@ -7,56 +7,160 @@
 
 * {
   @include box-sizing;
-  &::before,
-  &::after {
-	box-sizing: inherit;
-  }
 }
 
-
-html {
-  font-size: 100%;
-  height: 100%;
+*::before,
+*::after {
+  box-sizing: inherit;
 }
-
-
 
 body {
-  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  font-family: $base-font-family;
   font-size: 1rem;
-  line-height: 1.4;
-  font-weight: 400;
+  line-height: 1.5;
+  font-weight: 300;
   white-space: normal;
   font-style: normal;
-  color: $c-base-text;
-  background-color : $c-theme-1;
+  color: $c-theme-text;
+  background: $b-theme-1;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.75em;
+  @include font-size(16px);
 }
 
 .app-container {
   max-width: 960px;
   position : relative;
   margin:  auto;
+  @include clearfix;
+  font-weight: 300;
+  color: $b-theme-5;
 }
 
-
-.container-row {
+.site-wrap {
   max-width: 960px;
-  background: $c-theme-4;
-  padding: 2%;
+  margin: auto;
+  position : relative;
   @include clearfix;
 }
 
-.content-container {
-  max-width: 70%;
+/*
+ Header Styles
+ */
 
+.primary-site-header {
+  background: $b-theme-3;
+  min-height: 50px;
+  max-height: 75px;
+  margin-bottom: 2em;
+  width: 100%;
+  @include clearfix;
+}
+
+/*
+  Primary Site Nav
+ */
+.primary-site-nav {
+  float: right;
+  width: 65%;
+  text-align : right;
+}
+
+/*
+  Nav Links
+ */
+
+.site-link {
+  display : inline;
+  text-align: right;
+}
+
+.content-container {
+  @include clearfix;
+  padding: 1em;
+  margin-top: 1em;
+  background: $b-theme-3;
+  border-left: 1px solid $b-theme-5;
+  border-right: 1px solid $b-theme-5;
+}
+
+/*
+  Primary Header Styles
+ */
+.primary-site__link {
+  text-decoration : none;
+  width: 30%;
+  float : left;
+
+  text-align: center;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+/*
+Primary Site Logo
+ */
+
+.primary-site__logo {
+  @include font-size(32px);
+  color: $b-theme-2;
+  background: $b-theme-5;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
 }
 
 
-.media-container {
-  max-width: 30%;
+/*
+ Content Header
+ */
+
+.content-header {
+  @include font-size(28px);
+  text-transform: capitalize;
+  margin-bottom: 1em;
+  font-weight: 600;
+  font-family: 'Lato';
+  border-bottom: thin solid $b-theme-5;
+}
+
+.img-container {
+  max-width: 184px;
+  margin: 0 2% 2% 0;
+  height: 184px;
   float: left;
 }
 
+
+
 img {
+  display: inline-block;
+  vertical-align: middle;
   max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
 }
+
+/**
+ Footer Styles
+ */
+
+.primary-site-footer {
+  background: $b-theme-3;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  border-top: 5px $b-theme-5 solid;
+
+}
+
+
+
+

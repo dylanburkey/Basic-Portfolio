@@ -15,7 +15,7 @@ $config--image-folder: "../assets/media/images";
  * @section Config > Framework > Options
  */
 
-$use-meyer-rest: false;
+$use-meyer-rest: true;
 
 /**
  * Use Normalize?
@@ -33,8 +33,9 @@ $use-normalize: false;
  * @section Config > Framework > Options
  */
 
-$use-dbreset: true;
+$use-dbreset: false;
 
+$base-font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
 $base-font-size: 16px;
 

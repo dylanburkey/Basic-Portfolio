@@ -47,6 +47,8 @@ gulp.task('nunjucks', function() {
             path: ['src/assets/templates/']
         }))
         .pipe(gulp.dest('dist/'))
+        .pipe(browserSync.reload({stream:true}))
+
 
 });
 
@@ -67,7 +69,6 @@ gulp.task('sass', function() {
         .pipe(autoprefixer('last 3 versions'))
         .pipe(gulp.dest('dist/assets/styles/'))
         .pipe(rename({suffix: '.min'}))
-        .pipe(minifycss())
         .pipe(gulp.dest('dist/assets/styles/'))
          .pipe(browserSync.reload({stream:true}))
 });
@@ -90,8 +91,9 @@ gulp.task('scripts', function(){
 });
 
 
-gulp.task('watch', ['browserSync', 'sass'], function (){
+gulp.task('watch', ['browserSync', 'sass', 'scripts', 'nunjucks'], function (){
     gulp.watch('src/assets/styles/**/*.scss', ['sass']);
+    gulp.watch("src/assets/templates/pages/**/*.njx)", ['nunjucks']);
     gulp.watch("src/assets/scripts/**/*.js", ['scripts']);
     gulp.watch("*.html", ['bs-reload']);
     // Other watchers
