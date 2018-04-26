@@ -19,17 +19,11 @@ body {
   font-family: $base-font-family;
   font-size: 1rem;
   line-height: 1.5;
-  font-weight: 300;
+  font-weight: 400;
   white-space: normal;
   font-style: normal;
-  color: $c-theme-text;
+  color: #222;
   background: $b-theme-1;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 0.75em;
-  @include font-size(16px);
 }
 
 .app-container {
@@ -37,9 +31,40 @@ p {
   position : relative;
   margin:  auto;
   @include clearfix;
-  font-weight: 300;
-  color: $b-theme-5;
+  font-weight: 400;
+  background: $b-theme-4;
 }
+
+.app-container, .site-wrap {
+  width: 95%;
+}
+
+
+
+
+  h1, h2, h3, .site-link {
+    font-family: $header-font-family-fallback;
+
+    .wf-active & {
+      font-family: $base-header-font-family;
+    }
+  }
+
+  p {
+    font-family: $header-font-family-fallback;
+    .wf-active & {
+      font-family: $base-font-family;
+    }
+  }
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.75em;
+  font-weight: 400;
+  @include font-size(16px);
+}
+
+
 
 .site-wrap {
   max-width: 960px;
@@ -54,8 +79,8 @@ p {
 
 .primary-site-header {
   background: $b-theme-3;
-  min-height: 50px;
-  max-height: 75px;
+  min-height: 75px;
+  max-height: 150px;
   margin-bottom: 2em;
   width: 100%;
   @include clearfix;
@@ -64,26 +89,19 @@ p {
 /*
   Primary Site Nav
  */
-.primary-site-nav {
-  float: right;
-  width: 65%;
-  text-align : right;
-}
+
 
 /*
   Nav Links
  */
 
-.site-link {
-  display : inline;
-  text-align: right;
-}
+
 
 .content-container {
   @include clearfix;
   padding: 1em;
   margin-top: 1em;
-  background: $b-theme-3;
+  background: $b-theme-4;
   border-left: 1px solid $b-theme-5;
   border-right: 1px solid $b-theme-5;
 }
@@ -91,27 +109,60 @@ p {
 /*
   Primary Header Styles
  */
-.primary-site__link {
-  text-decoration : none;
-  width: 30%;
-  float : left;
 
-  text-align: center;
-  font-weight: 800;
-  text-transform: capitalize;
-}
 
 /*
 Primary Site Logo
  */
 
-.primary-site__logo {
+.site-logo {
+  margin-top: 0;
   @include font-size(32px);
-  color: $b-theme-2;
   background: $b-theme-5;
-  font-weight: 700;
-  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+
+
+
+   a {
+     text-decoration: none;
+     padding: 20px;
+     color: $b-theme-3;
+
+   }
 }
+.site-logo, .primary-site-nav {
+  display: inline-block;
+  position: relative;
+  line-height: 75px;
+}
+
+.site-link {
+  text-decoration: none;
+  color: #ccc;
+  padding-right: 10px;
+  border-right: thin solid #eee;
+  &:last-child{
+    border-right: none;
+  }
+}
+
+.primary-site-nav {
+  float: right;
+  line-height: 75px;
+ @include font-size(18px, false);
+ .site-link {
+    margin-left: 10px;
+  }
+
+  .site-link:hover{
+    text-decoration : underline;
+    margin-bottom: 10px;
+    font-weight: 600;
+
+  }
+}
+
+
 
 
 /*
@@ -122,8 +173,9 @@ Primary Site Logo
   @include font-size(28px);
   text-transform: capitalize;
   margin-bottom: 1em;
+  padding-bottom: 10px;
   font-weight: 600;
-  font-family: 'Lato';
+  font-family: $base-header-font-family;
   border-bottom: thin solid $b-theme-5;
 }
 
@@ -161,6 +213,25 @@ img {
 
 }
 
+
+.contact-form {
+  @include clearfix;
+  max-width: 98%;
+  label {
+    clear: both;
+    @include font-size(16px);
+    
+  }
+  input {
+    padding: 5px 2px;
+  }
+  input,textarea {
+    width: 100%;
+  }
+  textarea {
+    height: 400px;
+  }
+}
 
 
 

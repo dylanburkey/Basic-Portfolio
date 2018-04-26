@@ -6,14 +6,17 @@
 WebFontConfig = {
     custom: {
         families: [
-            'Lato',
-            'Roboto'
+            'Gugi',
+            'PT Serif'
         ],
         urls: [
-            'https://fonts.googleapis.com/css?family=Lato:700,900|Roboto:300,400,500'
+            'https://fonts.googleapis.com/css?family=Gugi|PT+Serif'
         ]
     },
-    timeout: 2000
+    timeout: 2000,
+    active: function() {
+        sessionStorage.fonts = true;
+    }
 };
 
 

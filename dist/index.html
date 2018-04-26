@@ -5,7 +5,16 @@
         <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
 
         <link href="assets/styles/styles.min.css" rel="stylesheet">
-
+        <script>
+            (function() {
+                if (sessionStorage.fonts) {
+                    console.log("Fonts installed.");
+                    document.documentElement.classList.add('wf-active');
+                } else {
+                    console.log("No fonts installed.");
+                }
+            })();
+        </script>
         <link rel="icon" href="src/images/favicon.jpg">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
@@ -23,18 +32,14 @@
 <!-- Start Primary Header -->
 <header role="banner" class="primary-site-header">
     <!-- Start .site-wrap -->
-
     <div class="site-wrap">
-            <a class="primary-site__link" href="/">
-                <h1 class="primary-site__logo">dylan burkey</h1>
-            </a>
+        <h1 class="site-logo"><a href="/">Dylan Burkey</a></h1>
 
         <nav class="primary-site-nav">
-            <ul>
-                <li class="site-link"><a href="/">about</a></li>
-                <li class="site-link"><a href=""></a></li>
-                <li class="site-link"><a href=""></a></li>
-            </ul>
+            <a class="site-link" href="/">about</a>
+            <a class="site-link" href="/portfolio.html">portfolio</a>
+            <a class="site-link" href="/contact.html">contact</a>
+
         </nav>
     </div>
     <!-- /.site-wrap -->
