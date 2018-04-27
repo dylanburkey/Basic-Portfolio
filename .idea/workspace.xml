@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="178d64d4-f951-4c31-bb5b-5703738cd764" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/templates/partials/header.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/templates/partials/header.njk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/assets/styles/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/styles/styles.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/assets/styles/styles.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/templates/pages/index.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/templates/pages/index.njk" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,11 +30,20 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="header.njk" pinned="false" current-in-tab="true">
+          <file leaf-file-name="header.njk" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/assets/templates/partials/header.njk">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="234">
-                  <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+                <state relative-caret-position="113">
+                  <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/dist/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-336">
+                  <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
                 </state>
               </provider>
             </entry>
@@ -66,11 +75,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.njk" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.njk" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/assets/templates/pages/index.njk">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="84">
-                  <caret line="23" column="336" selection-start-line="23" selection-start-column="336" selection-end-line="23" selection-end-column="336" />
+                <state relative-caret-position="152">
+                  <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
                 </state>
               </provider>
             </entry>
@@ -87,8 +96,8 @@
           <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/dist/contact.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1664">
-                  <caret line="64" column="24" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
+                <state relative-caret-position="1950">
+                  <caret line="75" column="24" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
                 </state>
               </provider>
             </entry>
@@ -100,8 +109,8 @@
           <file leaf-file-name="styles.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/assets/styles/styles.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="381">
-                  <caret line="332" column="17" selection-start-line="332" selection-start-column="17" selection-end-line="332" selection-end-column="17" />
+                <state relative-caret-position="26">
+                  <caret line="184" lean-forward="true" selection-start-line="184" selection-end-line="184" />
                 </state>
               </provider>
             </entry>
@@ -190,9 +199,9 @@
         <option value="$PROJECT_DIR$/src/assets/styles/utilities/_utilities.mixins.scss" />
         <option value="$PROJECT_DIR$/src/assets/templates/pages/portfolio.njk" />
         <option value="$PROJECT_DIR$/src/assets/templates/partials/_cards.njk" />
-        <option value="$PROJECT_DIR$/src/assets/templates/pages/index.njk" />
-        <option value="$PROJECT_DIR$/src/assets/styles/styles.scss" />
         <option value="$PROJECT_DIR$/src/assets/templates/partials/header.njk" />
+        <option value="$PROJECT_DIR$/src/assets/styles/styles.scss" />
+        <option value="$PROJECT_DIR$/src/assets/templates/pages/index.njk" />
       </list>
     </option>
   </component>
@@ -517,12 +526,12 @@
       <workItem from="1524504240603" duration="22743000" />
       <workItem from="1524602180826" duration="46229000" />
       <workItem from="1524769308968" duration="9475000" />
-      <workItem from="1524792590954" duration="84000" />
+      <workItem from="1524792590954" duration="614000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87400000" />
+    <option name="totallyTimeSpent" value="87930000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="829" extended-state="6" />
@@ -534,10 +543,10 @@
       <window_info anchor="bottom" id="GitLabIntegration" order="7" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="npm" order="2" sideWeight="0.20528455" side_tool="true" weight="0.14722222" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.22404371" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22404371" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.21311475" />
-      <window_info id="Gulp" order="2" sideWeight="0.2103825" side_tool="true" visible="true" weight="0.14722222" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7896175" visible="true" weight="0.14722222" />
+      <window_info id="Gulp" order="2" sideWeight="0.2112676" side_tool="true" visible="true" weight="0.14722222" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7887324" visible="true" weight="0.14722222" />
       <window_info anchor="bottom" id="Statistic" order="7" sideWeight="0.49930555" weight="0.32786885" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -771,13 +780,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/dist/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -828,8 +830,8 @@
     <entry file="file://$PROJECT_DIR$/src/assets/templates/partials/_form.njx" />
     <entry file="file://$PROJECT_DIR$/dist/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1664">
-          <caret line="64" column="24" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
+        <state relative-caret-position="1950">
+          <caret line="75" column="24" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -889,20 +891,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/styles/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="332" column="17" selection-start-line="332" selection-start-column="17" selection-end-line="332" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/templates/pages/index.njk">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="23" column="336" selection-start-line="23" selection-start-column="336" selection-end-line="23" selection-end-column="336" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/templates/layout.njk">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -912,8 +900,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/templates/partials/header.njk">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+        <state relative-caret-position="113">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-336">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/styles/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="184" lean-forward="true" selection-start-line="184" selection-end-line="184" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/templates/pages/index.njk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
         </state>
       </provider>
     </entry>
