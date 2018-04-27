@@ -1,19 +1,17 @@
-var express = require('express');
-var path = require('path');
-var serveStatic = require('serve-static');
+const static = require('node-static');
+const fileServer = new static.Server('./dist');
 
-var app = express();
 
-app.use(serveStatic(path.join(__dirname, 'dist'), {
-    maxAge: '1d',
-    setHeaders: setCustomCacheControl
-}));
+require('http').createServer(function (request, response) {
+    request.addListener('end', function () {
+        fileServer.serve(request, response, function (err, result) {
+            if (err) { // There was an error serving the file
+                console.error("Error serving " + request.url + " - " + err.message);
 
-app.listen(3000);
-
-function setCustomCacheControl (res, path) {
-    if (serveStatic.mime.lookup(path) === 'text/html') {
-        // Custom Cache-Control for HTML files
-        res.setHeader('Cache-Control', 'public, max-age=0')
-    }
-}
+                // Respond to the client
+                response.writeHead(err.status, err.headers);
+                response.end();
+            }
+        });
+    }).resume();
+}).listen(8080);
