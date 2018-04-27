@@ -83,7 +83,9 @@
     "esnext": true
   },
   "engines": {
-    "node": "9.11.1"
+    "node": "9.11.1",
+    "npm": "5.8.8"
+
   },
   "author": "Dylan Burkey",
   "license": "ISC",
