@@ -4,6 +4,5 @@ var serveStatic = require('serve-static')
 
 var app = express()
 
-app.use(serveStatic(path.join(__dirname, 'dist')))
-app.use(serveStatic(path.join(__dirname, 'dist')))
-app.listen(3000)
+app.use(serveStatic(path.join(__dirname, '/dist')))
+app.listen(process.env.PORT || 3000)
