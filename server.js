@@ -1,17 +1,9 @@
-const static = require('node-static');
-const fileServer = new static.Server('./dist');
+var express = require('express')
+var path = require('path')
+var serveStatic = require('serve-static')
 
+var app = express()
 
-require('http').createServer(function (request, response) {
-    request.addListener('end', function () {
-        fileServer.serve(request, response, function (err, result) {
-            if (err) { // There was an error serving the file
-                console.error("Error serving " + request.url + " - " + err.message);
-
-                // Respond to the client
-                response.writeHead(err.status, err.headers);
-                response.end();
-            }
-        });
-    }).resume();
-}).listen(8080);
+app.use(serveStatic(path.join(__dirname, 'dist')))
+app.use(serveStatic(path.join(__dirname, 'dist')))
+app.listen(3000)
