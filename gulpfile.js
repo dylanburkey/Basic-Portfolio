@@ -1,18 +1,18 @@
-var gulp = require('gulp');
-plumber = require('gulp-plumber'),
+const gulp = require('gulp');
+	plumber = require('gulp-plumber'),
     rename = require('gulp-rename');
-var sass = require('gulp-sass');
-var minifycss = require('gulp-minify-css');
-var htmlmin = require('gulp-htmlmin');
-var autoprefixer = require('gulp-autoprefixer');
-var babel = require('gulp-babel');
-var concat = require('gulp-concat');
-var jshint = require('gulp-jshint');
-var uglify = require('gulp-uglify');
-var nunjucksRender = require('gulp-nunjucks-render');
-var newer = require('gulp-newer');
-var data = require('gulp-data');
-const imagemin = require('gulp-imagemin');
+	sass = require('gulp-sass');
+	minifycss = require('gulp-minify-css');
+	htmlmin = require('gulp-htmlmin');
+	autoprefixer = require('gulp-autoprefixer');
+	babel = require('gulp-babel');
+	concat = require('gulp-concat');
+	jshint = require('gulp-jshint');
+	uglify = require('gulp-uglify');
+	nunjucksRender = require('gulp-nunjucks-render');
+	newer = require('gulp-newer');
+	data = require('gulp-data');
+	imagemin = require('gulp-imagemin');
 
 
 
